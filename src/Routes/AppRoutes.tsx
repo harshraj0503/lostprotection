@@ -23,28 +23,3 @@ export default AppRoutes;
 
 
 
-
-
-
-
-
-
-
-
-
-// import React from 'react';
-// import { Routes, Route } from 'react-router-dom';
-// import LandingPage from '../pages/LandingPage'; // Import your components
-
-// const AppRoutes: React.FC = () => {
-//   return (
-//     <Routes>
-//       <Route path="/nav1" element={<LandingPage />} />
-//       <Route path="/nav2" element={<LandingPage />} />
-//       <Route path="/nav3" element={<LandingPage />} />
-//       <Route path="/" element={<LandingPage />} />
-//     </Routes>
-//   );
-// };
-
-// export default AppRoutes;
