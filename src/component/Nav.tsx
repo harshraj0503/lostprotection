@@ -12,7 +12,7 @@ const navItems: Navitem[] = [
 const Nav: React.FC = () => {
 
   return (
-    <nav className='w-40 border-4 border-black'>
+    <nav className='w-40 border-4 border-black pl-2 pt-2'>
          <ul>
         {navItems.map((item) => (
           <li key={item.route} className="mb-2">
