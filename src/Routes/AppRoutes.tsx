@@ -1,16 +1,23 @@
 import React from "react";
 import {Routes, Route} from 'react-router-dom';
 import Landingpage from "../Pages/Landingpage";
+import { AppRoutesProps } from "../Types/types";
 
-const AppRoutes: React.FC = () => {
+const AppRoutes: React.FC<AppRoutesProps> = ({ routes}) => {
     
     return(
         <Routes>
-            <Route path="/nav1" element={<Landingpage />} />
-            <Route path="/nav2" element={<Landingpage />} />
-            <Route path="/nav3" element={<Landingpage />} />
+            {routes.map((item)=>(
+                <Route 
+                key={item.route}
+                path={item.route}
+                element={<Landingpage />}
+                />
+            ))}
             <Route path="/" element={<Landingpage />} />
         </Routes>
+       
+
     )
 };
 

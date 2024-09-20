@@ -11,14 +11,14 @@ const Landingpage: React.FC = () => {
     <div>
         <Header />
 
-        <div className='flex'>
+        <div className='landing-container'>
             <Nav  />
-            <div className='bg-yellow-500 w-screen h-screen  flex border-4 border-black justify-center items-center '>
-                <h2 className='text-lg font-bold'>{currentPage}</h2>
+            <div className='main-content'>
+                <h2 className='main-heading'>{currentPage}</h2>
             </div>
         </div>
     </div>
   )
-}
+} 
 
 export default Landingpage
