@@ -14,7 +14,6 @@ const Nav: React.FC = () => {
 
   return (
     <nav className={`nav-container ${isCollapsed ?'collapsed': ''}`}>
-
       <ul>
         <li className= 'toggle-icon' onClick={togglesNavbar}>
           {isCollapsed ?(
@@ -22,11 +21,12 @@ const Nav: React.FC = () => {
           ): (
             <AiOutlineMenuFold className='nav-icon' />
           )}
-        
         </li>
         {!isCollapsed && navItems.map((item)=>(
             <li key={item.path} className='nav-item'>
-              <Link to={item.path}>{item.name}</Link>
+              <Link to={item.path}>
+                {item.name}
+              </Link>
             </li>
           ))}
       </ul>

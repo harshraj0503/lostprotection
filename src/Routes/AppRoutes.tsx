@@ -11,7 +11,10 @@ const AppRoutes: React.FC<AppRoutesProps> = ({ routes}) => {
                 <Route 
                 key={item.path}
                 path={item.path}
-                element={<Landingpage />}
+                element={
+                    <Landingpage children={item.element} />
+                        
+            }
                 />
             ))}
             
