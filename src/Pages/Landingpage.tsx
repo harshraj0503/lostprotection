@@ -2,6 +2,7 @@ import React from 'react'
 import { useLocation } from 'react-router-dom'
 import Header from '../component/Header';
 import Nav from '../component/Nav';
+import { IoMenuSharp } from "react-icons/io5";
 
 const Landingpage: React.FC = () => {
     const location = useLocation();
@@ -10,7 +11,6 @@ const Landingpage: React.FC = () => {
   return (
     <div>
         <Header />
-
         <div className='landing-container'>
             <Nav  />
             <div className='main-content'>

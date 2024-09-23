@@ -1,16 +1,4 @@
-/* Nav.css */
-.nav-container {
-    width: 160px;
-    border: 4px solid black;
-    padding-left: 8px;
-    padding-top: 8px; 
-  }
-  
-  .nav-item {
-    margin-bottom: 8px; 
-  }
-  
-  /* Header.css */
+/* Header.css */
 .header-container {
     border: 4px solid black; 
     height: 3.5rem; 
@@ -18,6 +6,17 @@
     align-items: center; 
     justify-content: center; 
   }
+
+.header-container div {
+    margin-right: auto; 
+}
+
+.header-container h1 {
+    position: absolute; 
+    left: 50%;
+    transform: translateX(-50%); 
+    margin: 0;
+}
   
   .header-title {
     font-size: 1.125rem; 
@@ -42,4 +41,85 @@
     font-size: 1.125rem; 
     font-weight: bold; 
   }
+
+  .menuIcon{
+    position: relative;
+    /* left: 1rem; */
+    font-size: 2rem;
+    text-decoration: none;
+
+  }
   
+.cancelIcon{
+  position: absolute;
+  left: 10rem;
+  font-size: 2rem;
+}
+
+.breadcrumb {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.breadcrumb-item {
+  margin-right: 5px;
+}
+
+.breadcrumb-item.active {
+  font-weight: bold;
+}
+
+.collapsible-menu-container {
+  margin-top: 20px;
+}
+
+.menu-toggle-button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.menuIcon {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.menu-content {
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.menu-content.collapsed {
+  max-height: 0;
+  visibility: hidden;
+}
+
+.menu-content.expanded {
+  max-height: 150px; /* Adjust height based on your content */
+  visibility: visible;
+}
+
+.menu-content ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu-content li {
+  margin: 10px 0;
+}
+
+.menu-content a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.menu-content a:hover {
+  text-decoration: underline;
+}
+

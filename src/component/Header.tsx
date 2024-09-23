@@ -1,9 +1,13 @@
 import React from 'react'
+import { navItems } from './utils/navitems'
 
 const Header = () => {
   return (
     <header className='header-container'>
-        <h1 className='header-title'>App Header</h1>
+        {/* <div >
+          <Breadcrumb  navItems={navItems}/>
+        </div> */}
+        <h1 >App Header</h1>
     </header>
   )
 }
